@@ -1,0 +1,45 @@
+mat-form-field,
+textarea {
+  width: 100%;
+}
+
+mat-spinner {
+  margin: auto;
+}
+h1{
+  padding-left: 25px;
+}
+.input-field{
+  width: 100%;
+}
+.row{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.mybutton{
+  padding-left: 10px;
+  height: 40px;
+}
+input[type="file"]{
+  visibility: hidden;
+}
+
+.image-preview{
+  height: 5rem;
+  margin: irem 0;
+}
+
+.image-preview img{
+  margin-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  height: 100%;
+}
+
+.container{
+  min-height: 1000px;
+}
+
+i{
+  margin-bottom: 10px;
+}

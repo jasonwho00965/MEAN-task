@@ -1,0 +1,7 @@
+nav ul {
+  position: absolute;
+  top:0px;
+  right: 0px;
+}
+a {transition:0.5s; }
+a:hover { color:black; text-decoration:none;}

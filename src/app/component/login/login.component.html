@@ -1,0 +1,21 @@
+<div class="container">
+<div class="row">
+    <div class="col-md-6 mx-auto">
+      <div class="card card-body">
+        <img class="logo" src="assets/WechatIMG3.jpeg">
+        <h3 class="text-center">Account Login</h3>
+        <form (submit)="onLogin(loginForm)" #loginForm="ngForm" *ngIf="!isLoading">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" ngModel class="form-control" required #emailInput="ngModel">
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" ngModel class="form-control" required #passwordInput="ngModel">
+          </div>
+          <button type="submit" class="btn red darken-1" *ngIf="!isLoading">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

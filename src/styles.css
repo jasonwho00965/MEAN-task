@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.nav-wrapper .fa-bars{
+  font-size:25px;
+}
+
+footer{
+  margin-top:20px;
+}
+
+.story-text{
+  height:120px;
+}
+
+.dash-status{
+  text-transform: capitalize;
+}
+
+#delete-form{
+  display:inline;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+h1{
+  font-size: 400%;
+}

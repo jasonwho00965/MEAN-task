@@ -1,0 +1,10 @@
+<div class="container">
+    <h1>Welcome</h1>
+    <p>Welcome to JasonNews 1.0.0</p>
+    <p>Post news from the best and worst of the world and choose for them to be read by people or completley private as your own personal secret</p>
+
+    <a class = "btn red darken-1" href="/login" *ngIf="!userIsAuthenticated">Login</a>
+    <a class = "btn red darken-1" href="/signup" *ngIf="!userIsAuthenticated">Register</a>
+    <a class = "btn red darken-1" href="/posts" *ngIf="userIsAuthenticated">News</a>
+
+</div>

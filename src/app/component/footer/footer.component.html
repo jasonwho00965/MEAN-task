@@ -1,0 +1,28 @@
+<footer class="page-footer grey darken-3">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">JasonNews(Test Version by Jason)</h5>
+        <p class="grey-text text-lighten-4">Share your news with the world</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Links</h5>
+        <ul>
+          <li><a routerLink="/posts" routerLinkActive="mat-accent">Public News</a></li>
+          <li><a routerLink="/about" routerLinkActive="mat-accent">About</a></li>
+        </ul>
+      </div>
+      <div class="fixed-action-btn" *ngIf="userIsAuthenticated">
+          <a routerLink="/create" routerLinkActive="mat-accent" class="btn-floating btn-large red">
+            <i class="fa fa-plus"></i>
+          </a>
+        </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      © 2019 JasonNews
+      <a class="right" routerLink="/about" routerLinkActive="mat-accent">More Links</a>
+    </div>
+  </div>
+</footer>

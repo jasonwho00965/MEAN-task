@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="card card-body">
+  <h1>Add News</h1>
+  <div class="row">
+    <mat-spinner *ngIf= "isLoading"></mat-spinner>
+    <form class="col s12" [formGroup]="form" (submit)="onSavePost()" *ngIf= "!isLoading">
+      <div class="row">
+        <div class="input-field">
+          <input type="text" name="title" formControlName="title">
+          <label for="title">Title</label>
+          <mat-error *ngIf="form.get('title').invalid">Please enter a title</mat-error>
+        </div>
+      </div>
+
+      <div class="mybutton">
+          <button mat-stroked-button type="button" (click)="filePicker.click()">Pick Image</button>
+          <input type="file" #filePicker (change)="onImagePicked($event)">
+      </div>
+      <div class="image-preview" *ngIf="imagePreview !=='' && imagePreview && form.get('image').valid">
+        <img [src]="imagePreview" [alt]="form.value.title">
+      </div>
+      <div class="row">
+        <div class="input-field">
+          <h5>Show your news:</h5>
+          <ckeditor name="content" formControlName="content"></ckeditor>
+          <mat-error *ngIf="form.get('content').invalid">Please enter something</mat-error>
+        </div>
+      </div>
+      <div class="mybutton">
+          <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+            </button>
+      </div>
+    </form>
+  </div>
+</div>
+  </div>

@@ -1,0 +1,33 @@
+<div class="container">
+<div class="row">
+    <div class="col-md-6 mx-auto">
+      <div class="card card-body">
+        <img class="logo center" src="assets/WechatIMG3.jpeg">
+        <h3 class="text-center">Account Register</h3>
+        <form (submit)="onSignup(signupForm)" #signupForm="ngForm" *ngIf="!isLoading">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" name="name" ngModel required #nameInput="ngModel">
+            <mat-error *ngIf="nameInput.invalid">Please enter a valid email.</mat-error>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" ngModel class="form-control" required #emailInput="ngModel" email>
+            <mat-error *ngIf="emailInput.invalid">Please enter a valid email.</mat-error>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" ngModel class="form-control" required #passwordInput="ngModel">
+            <mat-error *ngIf="passwordInput.invalid">Please enter a valid password.</mat-error>
+          </div>
+          <div class="form-group">
+            <label for="password2">Confirm Password</label>
+            <input type="password" name="password2" ngModel class="form-control" validateEqual="password" required #password2Input="ngModel">
+          </div>
+          <button type="submit" class="btn red darken-1" *ngIf="!isLoading">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</div>

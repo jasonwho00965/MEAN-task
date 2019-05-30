@@ -1,0 +1,15 @@
+<nav class="grey darken-3">
+  <div class="container">
+    <div class="nav-wrapper">
+      <a routerLink="/posts" routerLinkActive="mat-accent" class="brand-logo center">JasonNews</a>
+      <a href="#" data-activates="main-menu" class="button-collapse show-on-large"><i class="fa fa-bars"></i></a>
+      <ul class="right hide-on small-only">
+        <div *ngIf="userIsAuthenticated">
+          <li>Welcome {{name}}</li>
+          <li><a (click)="onLogout()"><i class="fa fa-sign-out right"></i>Logout</a></li>
+        </div>
+          <li><a routerLink="/posts" routerLinkActive="mat-accent"><i class="fa fa-book right"></i>Public News</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
