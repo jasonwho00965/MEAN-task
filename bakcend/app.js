@@ -7,13 +7,13 @@ const postsRoutes = require("./routes/posts");
 const userRoutes = require("./routes/user");
 
 
-
+//xJXVYKJwZVYHYuSU
 const app = express();
 
 mongoose.set('useCreateIndex', true);
 mongoose
   .connect(
-    'mongodb://localhost:27017/MEAN-task'
+    'mongodb+srv://jasonwho:xJXVYKJwZVYHYuSU@cluster0-ipnka.mongodb.net/MEAN?retryWrites=true&w=majority'
   ,{useNewUrlParser: true })
   .then(() => {
     console.log("Connected to database!");
